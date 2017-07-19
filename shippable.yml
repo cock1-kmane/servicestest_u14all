@@ -10,8 +10,8 @@ services:
  # - postgres 
  # - rabbitmq 
  # - redis  
-  - selenium
- # - sqlite 
+ # - selenium
+  - sqlite 
  # - couchdb 
  # - rethinkdb 
  # - riak 
@@ -19,7 +19,8 @@ services:
 build:
   ci:
     - node --version
-    - echo SHIPPABLE_SELENIUM_v=$SHIPPABLE_SELENIUM_BINARY
+    - echo SHIPPABLE_SQLITE_BINARY=$SHIPPABLE_SQLITE_BINARY
+    #- echo SHIPPABLE_SELENIUM_v=$SHIPPABLE_SELENIUM_BINARY
    # - echo SHIPPABLE_REDIS_BINARY=$SHIPPABLE_REDIS_BINARY
     #- echo SHIPPABLE_RABBITMQ_BINARY=$SHIPPABLE_RABBITMQ_BINARY
    # - echo SHIPPABLE_POSTGRES_BINARY=$SHIPPABLE_POSTGRES_BINARY

@@ -31,7 +31,7 @@ build:
     #- echo SHIPPABLE_NEO4J_BINARY=$SHIPPABLE_NEO4J_BINARY
     #- echo SHIPPABLE_CASSANDRA_BINARY=$SHIPPABLE_CASSANDRA_BINARY
     #- cassandra -v
-    - elasticsearch -v
+   # - elasticsearch -v
     #- echo SHIPPABLE_MEMCACHED_BINARY=$SHIPPABLE_MEMCACHED_BINARY
     #- memcached -v
     #- echo SHIPPABLE_MONGODB_BINARY=$SHIPPABLE_MONGODB_BINARY

@@ -8,8 +8,8 @@ services:
  # - mysql 
  # - neo4j 
  # - postgres 
-  - rabbitmq 
-#  - redis  
+ # - rabbitmq 
+  - redis  
  # - selenium
  # - sqlite 
  # - couchdb 
@@ -19,7 +19,8 @@ services:
 build:
   ci:
     - node --version
-    - echo SHIPPABLE_RABBITMQ_BINARY=$SHIPPABLE_RABBITMQ_BINARY
+    - echo SHIPPABLE_REDIS_BINARY=$SHIPPABLE_REDIS_BINARY
+    #- echo SHIPPABLE_RABBITMQ_BINARY=$SHIPPABLE_RABBITMQ_BINARY
    # - echo SHIPPABLE_POSTGRES_BINARY=$SHIPPABLE_POSTGRES_BINARY
     #- echo SHIPPABLE_NEO4J_BINARY=$SHIPPABLE_NEO4J_BINARY
     #- echo SHIPPABLE_CASSANDRA_BINARY=$SHIPPABLE_CASSANDRA_BINARY

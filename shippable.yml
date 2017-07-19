@@ -20,7 +20,8 @@ build:
   ci:
     - node --version
     - cassandra -v
-    - elasticsearch -v
+    #- elasticsearch -v
+    - echo SHIPPABLE_ELASTICSEARCH_BINARY=$SHIPPABLE_ELASTICSEARCH_BINARY
     - memcached -v
     - mongod -v
     - psql --version

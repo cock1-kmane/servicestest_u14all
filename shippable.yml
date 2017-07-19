@@ -4,15 +4,15 @@ services:
   - cassandra 
   - elasticsearch 
   - memcached 
-  - mongodb 
+##  - mongodb 
  # - mysql 
  # - neo4j 
-  - postgres 
+##  - postgres 
  # - rabbitmq 
   - redis  
  # - selenium
  # - sqlite 
-  - couchdb 
+ # - couchdb 
  # - rethinkdb 
   - riak 
   

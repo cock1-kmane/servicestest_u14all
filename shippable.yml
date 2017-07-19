@@ -1,28 +1,29 @@
 language: none
 
 services:
-  - cassandra 
- # - elasticsearch 
+ # - cassandra 
+  - elasticsearch 
  # - memcached 
 ##  - mongodb 
  # - mysql 
  # - neo4j 
 ##  - postgres 
  # - rabbitmq 
-  - redis  
+#  - redis  
  # - selenium
  # - sqlite 
  # - couchdb 
  # - rethinkdb 
-  - riak 
+ # - riak 
   
 build:
   ci:
     - node --version
     - echo SHIPPABLE_CASSANDRA_BINARY=$SHIPPABLE_CASSANDRA_BINARY
     - cassandra -v
-    #- elasticsearch -v
-    #- echo SHIPPABLE_ELASTICSEARCH_BINARY=$SHIPPABLE_ELASTICSEARCH_BINARY
+    - echo SHIPPABLE_ELASTICSEARCH_BINARY=$SHIPPABLE_ELASTICSEARCH_BINARY
+    - elasticsearch -v
+    
     #- memcached -v
    # - mongod -v
    # - psql --version

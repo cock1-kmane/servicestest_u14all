@@ -19,8 +19,8 @@ services:
 build:
   ci:
     - node --version
-    - echo SHIPPABLE_CASSANDRA_BINARY=$SHIPPABLE_CASSANDRA_BINARY
-    - cassandra -v
+    #- echo SHIPPABLE_CASSANDRA_BINARY=$SHIPPABLE_CASSANDRA_BINARY
+    #- cassandra -v
     - echo SHIPPABLE_ELASTICSEARCH_BINARY=$SHIPPABLE_ELASTICSEARCH_BINARY
     - elasticsearch -v
     

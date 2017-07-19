@@ -24,7 +24,7 @@ build:
   #  - echo SHIPPABLE_ELASTICSEARCH_BINARY=$SHIPPABLE_ELASTICSEARCH_BINARY
     #- elasticsearch -v
     - echo SHIPPABLE_MEMCACHED_BINARY=$SHIPPABLE_MEMCACHED_BINARY
-    - memcached -v
+    #- memcached -v
    # - mongod -v
    # - psql --version
    # - redis-server -v

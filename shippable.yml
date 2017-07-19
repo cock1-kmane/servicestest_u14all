@@ -5,8 +5,8 @@ services:
  # - elasticsearch 
   #- memcached 
  # - mongodb 
-  - mysql 
- # - neo4j 
+ # - mysql 
+  - neo4j 
 ##  - postgres 
  # - rabbitmq 
 #  - redis  
@@ -19,6 +19,7 @@ services:
 build:
   ci:
     - node --version
+    - echo SHIPPABLE_NEO4J_BINARY=$SHIPPABLE_NEO4J_BINARY
     #- echo SHIPPABLE_CASSANDRA_BINARY=$SHIPPABLE_CASSANDRA_BINARY
     #- cassandra -v
   #  - echo SHIPPABLE_ELASTICSEARCH_BINARY=$SHIPPABLE_ELASTICSEARCH_BINARY
@@ -28,7 +29,7 @@ build:
     #- echo SHIPPABLE_MONGODB_BINARY=$SHIPPABLE_MONGODB_BINARY
     
    # - mongod -v
-    - echo SHIPPABLE_MYSQL_BINARY=$SHIPPABLE_MYSQL_BINARY
+   # - echo SHIPPABLE_MYSQL_BINARY=$SHIPPABLE_MYSQL_BINARY
    # - psql --version
    # - redis-server -v
    # - riak version

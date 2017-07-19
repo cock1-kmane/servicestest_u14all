@@ -3,8 +3,8 @@ language: none
 services:
  # - cassandra 
  # - elasticsearch 
-  - memcached 
-##  - mongodb 
+  #- memcached 
+  - mongodb 
  # - mysql 
  # - neo4j 
 ##  - postgres 
@@ -23,8 +23,9 @@ build:
     #- cassandra -v
   #  - echo SHIPPABLE_ELASTICSEARCH_BINARY=$SHIPPABLE_ELASTICSEARCH_BINARY
     #- elasticsearch -v
-    - echo SHIPPABLE_MEMCACHED_BINARY=$SHIPPABLE_MEMCACHED_BINARY
+    #- echo SHIPPABLE_MEMCACHED_BINARY=$SHIPPABLE_MEMCACHED_BINARY
     #- memcached -v
+    - echo SHIPPABLE_MONGODB_BINARY=$SHIPPABLE_MONGODB_BINARY
    # - mongod -v
    # - psql --version
    # - redis-server -v

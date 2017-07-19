@@ -2,7 +2,7 @@ language: none
 
 services:
  # - cassandra 
- # - elasticsearch 
+  - elasticsearch 
   #- memcached 
  # - mongodb 
  # - mysql 
@@ -14,12 +14,13 @@ services:
  # - sqlite 
  # - couchdb 
  # - rethinkdb 
-  - riak 
+ # - riak 
   
 build:
   ci:
     - node --version
-    - echo SHIPPABLE_RIAK_BINARY=$SHIPPABLE_RIAK_BINARY
+    - echo SHIPPABLE_ES_BINARY=$SHIPPABLE_ES_BINARY
+   # - echo SHIPPABLE_RIAK_BINARY=$SHIPPABLE_RIAK_BINARY
    # - echo SHIPPABLE_RETHINKDB_BINARY=$SHIPPABLE_RETHINKDB_BINARY
     #- echo SHIPPABLE_COUCHDB_BINARY=$SHIPPABLE_COUCHDB_BINARY
     #- echo SHIPPABLE_SQLITE_BINARY=$SHIPPABLE_SQLITE_BINARY
@@ -30,8 +31,7 @@ build:
     #- echo SHIPPABLE_NEO4J_BINARY=$SHIPPABLE_NEO4J_BINARY
     #- echo SHIPPABLE_CASSANDRA_BINARY=$SHIPPABLE_CASSANDRA_BINARY
     #- cassandra -v
-  #  - echo SHIPPABLE_ELASTICSEARCH_BINARY=$SHIPPABLE_ELASTICSEARCH_BINARY
-    #- elasticsearch -v
+    - elasticsearch -v
     #- echo SHIPPABLE_MEMCACHED_BINARY=$SHIPPABLE_MEMCACHED_BINARY
     #- memcached -v
     #- echo SHIPPABLE_MONGODB_BINARY=$SHIPPABLE_MONGODB_BINARY
